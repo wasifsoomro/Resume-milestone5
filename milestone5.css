@@ -1,0 +1,250 @@
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center; /* Center text content globally */
+}
+
+/* Container for the resume and form */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Input and textarea styles */
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Skill section styles */
+.skills-container {
+    display: flex;
+    justify-content: center; /* Center skill input and button */
+    gap: 10px;
+}
+
+#skills-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center skills list */
+}
+
+#skills-list li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Resume display section */
+
+.resume {
+    display: none;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.resume h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Profile section styles */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #4CAF50;
+    object-fit: cover;
+}
+
+#personal-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#personal-information p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Section styles inside the resume */
+.resume-section {
+    margin-bottom: 20px;
+    text-align: center; /* Center all content in sections */
+}
+
+.resume-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resume-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: inline-block;
+}
+
+/* Displayed skills list inside resume */
+#display-skills {
+    display: flex;
+    justify-content: center; /* Center skills display */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#display-skills li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    input, textarea, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .profile {
+        width: 80px;
+        height: 80px;
+    }
+
+    input, textarea, button {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+
+    #personal-information p {
+        font-size: 0.9rem;
+    }
+}
+
+.shareLink {
+    display: block;
+}
